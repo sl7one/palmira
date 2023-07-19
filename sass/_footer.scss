@@ -24,11 +24,18 @@
     justify-content: space-between;
     align-items: center;
 
-    p {
+    p,
+    .footer__developers {
       font-size: 12px;
       color: var(--white);
       line-height: 1;
       font-weight: 400;
+    }
+  }
+
+  .header__social-links-list {
+    span:hover {
+      color: var(--white);
     }
   }
 
@@ -49,6 +56,15 @@
     display: flex;
   }
 
+  &__nav-menu {
+    a {
+      transition: var(--transition);
+      &:hover {
+        color: var(--accent);
+      }
+    }
+  }
+
   nav {
     width: 960px;
   }
@@ -56,7 +72,6 @@
   &__nav-menu > li {
     flex: 1;
     justify-content: flex-end;
-   
   }
 
   &__nav-menu > li > a {
@@ -65,13 +80,12 @@
     text-transform: uppercase;
   }
 
-  &__nav-menu > li > ul  {
+  &__nav-menu > li > ul {
     display: flex;
     flex-direction: column;
     gap: 12px;
     font-size: 12px;
     line-height: calc(14 / 12);
-    // text-transform: unset;
   }
 }
 

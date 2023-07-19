@@ -13,7 +13,6 @@
     top: 0;
     left: 0;
     z-index: 1;
-
   }
 
   &__wrapper {
@@ -42,6 +41,13 @@
   &__social-links-list {
     display: flex;
     gap: 24px;
+
+    span {
+      transition: var(--transition);
+      &:hover {
+        color: var(--accent);
+      }
+    }
   }
 
   &__phone-btn {
@@ -53,6 +59,11 @@
     font-size: 13px;
     font-weight: 500;
     line-height: calc(16 / 13);
+    transition: var(--transition);
+
+    &:hover {
+      color: var(--accent);
+    }
   }
 
   &__lang-switcher {
@@ -97,6 +108,14 @@
     font-weight: 500;
     line-height: calc(17 / 14);
     color: #f2f2f2;
+
+    a{
+      transition: var(--transition);
+
+      &:hover{
+        color: var(--accent);
+      }
+    }
   }
 
   &__nav-menu > li > a {

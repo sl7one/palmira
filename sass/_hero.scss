@@ -1,5 +1,8 @@
-.slider {
+.hero {
+  position: relative;
+}
 
+.slider {
   .container {
     position: relative;
     height: 100%;
@@ -33,7 +36,7 @@
 
   &__arrows {
     position: absolute;
-    bottom: 20%;
+    bottom: 12%;
     right: 50%;
     transform: translate(50%, 50%);
 
@@ -55,22 +58,16 @@
   }
 }
 
-.right {
-  transform: rotate(45deg);
+.arrow-btn-slider {
   outline: unset;
   background-color: transparent;
   border: unset;
   cursor: pointer;
   font-weight: 700;
   color: var(--white);
-}
+  transition: var(--transition);
 
-.left {
-  transform: rotate(-135deg);
-  outline: unset;
-  background-color: transparent;
-  border: unset;
-  cursor: pointer;
-  font-weight: 700;
-  color: var(--white);
+  &:hover {
+    color: var(--accent);
+  }
 }
