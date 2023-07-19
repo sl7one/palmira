@@ -65,7 +65,7 @@
   cursor: pointer;
   font-weight: 700;
   color: var(--white);
-  transition: var(--transition);
+  @include transition(color);
 
   &:hover {
     color: var(--accent);

@@ -58,7 +58,7 @@
 
   &__nav-menu {
     a {
-      transition: var(--transition);
+      @include transition(color);
       &:hover {
         color: var(--accent);
       }

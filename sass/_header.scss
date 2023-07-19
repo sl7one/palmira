@@ -4,7 +4,7 @@
     position: relative;
   }
 
-  &__logo{
+  &__logo {
     max-width: 258px;
   }
 
@@ -48,7 +48,7 @@
     gap: 24px;
 
     span {
-      transition: var(--transition);
+      @include transition(color);
       &:hover {
         color: var(--accent);
       }
@@ -64,7 +64,7 @@
     font-size: 13px;
     font-weight: 500;
     line-height: calc(16 / 13);
-    transition: var(--transition);
+    @include transition(color);
 
     &:hover {
       color: var(--accent);
@@ -107,6 +107,33 @@
     }
   }
 
+  
+}
+
+
+.header{
+  &__nav-menu > li > {
+    ul {
+      position: absolute;
+      top: 46px;
+      left: 0;
+      visibility: hidden;
+      opacity: 0;
+
+      background-color: var(--white);
+      border-radius: 16px;
+
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+
+      padding: 24px;
+      color: var(--black);
+      min-width: 233px;
+
+      transition: opacity 250ms ease-in, visibility 250ms ease-in;
+    }
+  }
   &__nav-menu {
     display: flex;
     justify-content: space-between;
@@ -115,14 +142,13 @@
     color: #f2f2f2;
 
     a {
-      transition: var(--transition);
+      @include transition(color);
 
       &:hover {
         color: var(--accent);
       }
     }
   }
-
   &__nav-menu > li > a {
     text-transform: uppercase;
   }
@@ -165,28 +191,6 @@
 
     li:nth-of-type(6)::after {
       display: inline-block;
-    }
-  }
-
-  &__nav-menu > li > {
-    ul {
-      position: absolute;
-      top: 46px;
-      left: 0;
-      visibility: hidden;
-      opacity: 0;
-      transition: var(--transition);
-
-      background-color: var(--white);
-      border-radius: 16px;
-
-      display: flex;
-      flex-direction: column;
-      gap: 16px;
-
-      padding: 24px;
-      color: var(--black);
-      min-width: 233px;
     }
   }
 }
