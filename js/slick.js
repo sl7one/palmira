@@ -21,6 +21,7 @@ $(document).ready(function () {
     arrows: false,
     slidesToShow: 4,
     slidesToScroll: 1,
+    waitForAnimate: false,
     // autoplay: true,
     // appendArrows: $(".slick-dots"),
     // autoplaySpeed: 5000,

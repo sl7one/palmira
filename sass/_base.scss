@@ -31,3 +31,31 @@ body {
     font-size: 16px;
   }
 }
+
+.current {
+  color: var(--accent);
+}
+
+.current-menu-item {
+  color: var(--accent);
+}
+
+.time {
+  margin-top: 16px;
+  color: #9b9b9b;
+  font-weight: 400;
+  line-height: calc(17 / 14);
+}
+
+.text {
+  margin-top: 40px;
+  max-width: 740px;
+
+  font-size: 16px;
+  font-weight: 400;
+  line-height: calc(26 / 16);
+}
+
+.accent {
+  color: var(--accent);
+}

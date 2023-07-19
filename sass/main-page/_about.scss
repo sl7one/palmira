@@ -7,17 +7,9 @@
     justify-content: space-between;
   }
 
-  &__text {
-    margin-top: 40px;
-    max-width: 740px;
-
-    font-size: 16px;
-    font-weight: 400;
-    line-height: calc(26 / 16);
-  }
-
   &__img {
     border-radius: 15px;
+    max-width: 417px;
   }
 
   .link {
