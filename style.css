@@ -47,7 +47,14 @@ body {
 
 .container {
   margin: 0 auto;
-  max-width: 1280px;
+  width: 100%;
+  padding: 5px 20px;
+}
+@media screen and (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+    padding: 0;
+  }
 }
 
 .title {
@@ -167,6 +174,75 @@ body {
   content: "\e907";
 }
 
+.mobile-menu {
+  background-color: var(--black);
+}
+.mobile-menu .container {
+  display: flex;
+  align-items: center;
+}
+@media screen and (min-width: 1280px) {
+  .mobile-menu {
+    display: none;
+  }
+}
+.mobile-menu .btn2 {
+  margin-left: 16px;
+  width: 30px;
+  height: 30px;
+  transition-duration: 0.5s;
+}
+.mobile-menu .btn2 .icon {
+  transition-duration: 0.5s;
+  position: absolute;
+  height: 3px;
+  width: 30px;
+  top: 26px;
+  background-color: var(--accent);
+}
+.mobile-menu .btn2 .icon:before {
+  transition-duration: 0.5s;
+  position: absolute;
+  width: 30px;
+  height: 3px;
+  background-color: var(--accent);
+  content: "";
+  top: -10px;
+}
+.mobile-menu .btn2 .icon:after {
+  transition-duration: 0.5s;
+  position: absolute;
+  width: 30px;
+  height: 3px;
+  background-color: var(--accent);
+  content: "";
+  top: 10px;
+}
+.mobile-menu .btn2.open .icon {
+  transition-duration: 0.5s;
+  background-color: transparent;
+}
+.mobile-menu .btn2.open .icon:before {
+  transform-origin: 30px;
+  transform: rotate(45deg) translate(14.5px, 14.5px);
+}
+.mobile-menu .btn2.open .icon:after {
+  transform-origin: 30px;
+  transform: rotateZ(-45deg) translate(14.5px, -14.5px);
+}
+.mobile-menu .btn2:hover {
+  cursor: pointer;
+}
+.mobile-menu .header__logo {
+  max-width: 135px;
+}
+.mobile-menu .header__lang-switcher {
+  margin-left: auto;
+}
+.mobile-menu__footer {
+  width: 100%;
+}
+
 .header {
   background-color: var(--black);
 }
@@ -239,6 +315,7 @@ body {
 }
 .header__search {
   position: relative;
+  width: 354px;
 }
 .header__search input {
   display: inline-block;
@@ -246,7 +323,7 @@ body {
   border-radius: 29px;
   padding: 10px 10px 10px 12px;
   outline: unset;
-  width: 354px;
+  width: 100%;
   background-color: transparent;
 }
 .header__search input::-moz-placeholder {
@@ -329,6 +406,15 @@ body {
 }
 .header__nav-menu > li:nth-of-type(6)::after {
   display: inline-block;
+}
+
+.header > .container {
+  display: none;
+}
+@media screen and (min-width: 1280px) {
+  .header > .container {
+    display: block;
+  }
 }
 
 .hero {
