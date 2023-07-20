@@ -8,7 +8,7 @@ body {
   margin: 0 auto;
   width: 100%;
   padding: 5px 20px;
-  
+
   @include desktop {
     max-width: 1280px;
     padding: 0;
@@ -16,11 +16,17 @@ body {
 }
 
 .title {
-  font-size: 42px;
-  line-height: 50px;
+  font-size: 24px;
+  line-height: calc(29 / 24);
+
   font-weight: 800;
   color: var(--accent);
   text-transform: uppercase;
+
+  @include desktop {
+    font-size: 42px;
+    line-height: calc(50 / 40);
+  }
 }
 
 .link {
@@ -57,9 +63,14 @@ body {
   margin-top: 40px;
   max-width: 740px;
 
-  font-size: 16px;
+  font-size: 14px;
+  line-height: calc(23 / 14);
   font-weight: 400;
-  line-height: calc(26 / 16);
+
+  @include desktop {
+    font-size: 16px;
+    line-height: calc(26 / 16);
+  }
 }
 
 .accent {
@@ -76,3 +87,9 @@ body {
     color: var(--black);
   }
 }
+
+
+.overflow{
+  overflow-y: hidden;
+}
+

@@ -50,6 +50,58 @@ $half-width: $width / 2 - 0.5px;
     display: none;
   }
 
+  &__header {
+    .container {
+      z-index: 3;
+    }
+  }
+
+  &__modal {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background-color: var(--black);
+    padding-top: 60px;
+    transform-origin: 100% 0;
+    transform: scale(0) rotate(60deg) translateY(-50%);
+    visibility: hidden;
+    transition: all 500ms cubic-bezier(0, 1.99, 1, 1.09);
+
+    .header__nav-menu {
+      flex-direction: column;
+      margin-top: 55px;
+
+      li {
+        padding: 15px 15px 15px 0;
+
+        &:hover{
+          ul{
+            visibility: hidden;
+          }
+        }
+      }
+
+    }
+  }
+
+  &__footer {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    padding: 0 20px 20px 20px;
+  }
+
+  &__footer > div {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 16px;
+  }
+
   .btn2 {
     margin-left: 16px;
     @include btn($width, $height);
@@ -94,10 +146,6 @@ $half-width: $width / 2 - 0.5px;
 
   .header__lang-switcher {
     margin-left: auto;
-  }
-
-  &__footer {
-    width: 100%;
   }
 }
 
@@ -253,7 +301,6 @@ $half-width: $width / 2 - 0.5px;
   &__nav-menu > li > a {
     text-transform: uppercase;
   }
-
   &__nav-menu > {
     li {
       position: relative;
@@ -301,4 +348,9 @@ $half-width: $width / 2 - 0.5px;
   @include desktop {
     display: block;
   }
+}
+
+.visible {
+  transform: scale(1) rotate(0deg) translateY(0);
+  visibility: visible;
 }

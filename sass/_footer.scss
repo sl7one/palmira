@@ -1,6 +1,10 @@
 .footer {
   img {
+    display: none;
     max-width: 220px;
+    @include desktop {
+      display: block;
+    }
   }
 
   &__top-bg {
@@ -23,6 +27,13 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-direction: column;
+    gap: 16px;
+
+    @include desktop {
+      flex-direction: row;
+      gap: unset;
+    }
 
     p,
     .footer__developers {
@@ -30,6 +41,11 @@
       color: var(--white);
       line-height: 1;
       font-weight: 400;
+      order: 2;
+
+      @include desktop {
+        order: unset;
+      }
     }
   }
 
@@ -54,6 +70,12 @@
   &__nav-menu {
     color: var(--white);
     display: flex;
+    flex-direction: column;
+
+    @include desktop {
+      flex-direction: row;
+    }
+
   }
 
   &__nav-menu {

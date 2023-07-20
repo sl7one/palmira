@@ -2,7 +2,9 @@ const leftArrow =
   '<button class="icon-arrow-slider-left arrow-btn-slider" type="button"></button>';
 const rightArrow =
   '<button class="icon-arrow-slider-right arrow-btn-slider" type="button"></button>';
-$(document).ready(function () {
+
+
+  $(document).ready(function () {
   $(".slider").slick({
     infinite: true,
     // autoplay: true,
@@ -19,7 +21,7 @@ $(document).ready(function () {
     infinite: true,
     dots: true,
     arrows: false,
-    slidesToShow: 4,
+    slidesToShow: 1,
     slidesToScroll: 1,
     waitForAnimate: false,
     // autoplay: true,
@@ -28,6 +30,25 @@ $(document).ready(function () {
     zIndex: -1,
     // nextArrow: rightArrow,
     // prevArrow: leftArrow,
+    responsive: [{
+
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 4,
+        slidesToScroll: 1,
+      }
+
+    }, {
+
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 2,
+        dots: true
+      }
+
+    }]
+
+    
   });
 });
 
