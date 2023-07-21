@@ -3,11 +3,11 @@ const leftArrow =
 const rightArrow =
   '<button class="icon-arrow-slider-right arrow-btn-slider" type="button"></button>';
 
-
-  $(document).ready(function () {
+$(() => {
+  //hero-slider
   $(".slider").slick({
     infinite: true,
-    // autoplay: true,
+    autoplay: true,
     appendArrows: $(".slider__arrows"),
     autoplaySpeed: 5000,
     zIndex: -1,
@@ -15,8 +15,11 @@ const rightArrow =
       '<button class="icon-arrow-slider-right arrow-btn-slider" type="button"></button>',
     prevArrow:
       '<button class="icon-arrow-slider-left arrow-btn-slider" type="button"></button>',
+    mobileFirst: true,
+
   });
 
+  //news-slider
   $(".news__slider").slick({
     infinite: true,
     dots: true,
@@ -24,44 +27,38 @@ const rightArrow =
     slidesToShow: 1,
     slidesToScroll: 1,
     waitForAnimate: false,
-    // autoplay: true,
-    // appendArrows: $(".slick-dots"),
-    // autoplaySpeed: 5000,
     zIndex: -1,
-    // nextArrow: rightArrow,
-    // prevArrow: leftArrow,
-    responsive: [{
+    mobileFirst: true,
+    autoplay: true,
+    autoplaySpeed: 5000,
 
-      breakpoint: 1024,
-      settings: {
-        slidesToShow: 4,
-        slidesToScroll: 1,
-      }
-
-    }, {
-
-      breakpoint: 480,
-      settings: {
-        slidesToShow: 2,
-        dots: true
-      }
-
-    }]
-
-    
+    responsive: [
+      {
+        breakpoint: 320,
+        settings: {
+          slidesToShow: 1,
+        },
+      },
+      {
+        breakpoint: 1280,
+        settings: {
+          slidesToShow: 4,
+        },
+      },
+    ],
   });
 });
 
-const setNumbers = (_, slick) => {
+const setNumbers = (init, _, slick) => {
   const { currentSlide, slideCount } = slick;
   $(".current-slide").text(
-    (currentSlide + 1).toString().padStart(2, "0") + "/"
+    (init ? 0 : currentSlide + 1).toString().padStart(2, "0") + "/"
   );
   $(".total-slides").text(slideCount.toString().padStart(2, "0"));
 };
 
-$(".slider").on("init", setNumbers);
-$(".slider").on("beforeChange", setNumbers);
+$(".slider").on("init", (_, slick) => setNumbers(true, _, slick));
+$(".slider").on("beforeChange", (_, slick) => setNumbers(false, _, slick));
 
 $(".news__slider").on("init", (_, slick) => {
   $(".slick-dots").wrapAll("<div class='custom-wrapper' />");

@@ -14,7 +14,6 @@
     display: none;
     align-items: center;
     justify-content: center;
-    // padding: 8px 14px;
     width: 146px;
     height: 35px;
     background-color: var(--gray);
@@ -32,6 +31,7 @@
 
   &__slider {
     margin-top: 50px;
+    padding: 0 20px;
   }
 
   &__slider-item {
