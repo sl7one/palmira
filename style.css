@@ -193,6 +193,7 @@ body {
 .mobile-menu {
   background-color: var(--black);
   position: fixed;
+  z-index: 1;
   width: 100vw;
   top: 0;
   left: 0;
