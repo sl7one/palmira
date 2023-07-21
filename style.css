@@ -1050,6 +1050,7 @@ body {
 }
 .contacts-page img {
   max-width: 600px;
+  border-radius: 15px;
 }
 .contacts-page__content-block {
   margin: 0 auto;
@@ -1081,4 +1082,34 @@ body {
 }
 .contacts-page__content-block > div > .header__social-links-list > li > a:hover span {
   color: var(--accent);
+}
+
+.services-page {
+  padding-bottom: 80px;
+}
+.services-page__title {
+  margin-top: 32px;
+  text-align: center;
+}
+.services-page__wrapper {
+  max-width: 916px;
+  margin: 0 auto;
+}
+.services-page__wrapper > img {
+  margin-top: 32px;
+}
+.services-page__wrapper > p {
+  margin-top: 32px;
+}
+.services-page__img-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 850px;
+  gap: 16px;
+  margin: 0 auto;
+  margin-top: 44px;
+  margin-bottom: 44px;
+}
+.services-page__img-wrapper img {
+  max-width: 416px;
 }/*# sourceMappingURL=style.css.map */

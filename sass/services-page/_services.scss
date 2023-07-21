@@ -1,0 +1,36 @@
+.services-page {
+  padding-bottom: 80px;
+
+  &__title {
+    margin-top: 32px;
+    text-align: center;
+  }
+
+  &__wrapper {
+    max-width: 916px;
+    margin: 0 auto;
+
+    & > img {
+      margin-top: 32px;
+    }
+
+    & > p {
+      margin-top: 32px;
+    }
+  }
+
+  &__img-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 850px;
+    gap: 16px;
+
+    margin: 0 auto;
+    margin-top: 44px;
+    margin-bottom: 44px;
+
+    img {
+      max-width: 416px;
+    }
+  }
+}
