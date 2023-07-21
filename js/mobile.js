@@ -1,3 +1,8 @@
+const vh = window.innerHeight * 0.01;
+$(".mobile-menu__modal").css("--vh", `${vh}px`);
+$(".mobile-menu__nav-menu > li > ul").css("--vh", `${vh}px`);
+// document.documentElement.style.setProperty('--vh', `${vh}px`);
+
 $(".menu").on("click", () => {
   $(".menu").toggleClass("open");
 
