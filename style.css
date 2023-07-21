@@ -1112,4 +1112,76 @@ body {
 }
 .services-page__img-wrapper img {
   max-width: 416px;
+}
+
+.competitions-page {
+  padding-bottom: 80px;
+}
+.competitions-page__wrapper {
+  max-width: 940px;
+  margin: 0 auto;
+}
+.competitions-page__title {
+  margin-top: 32px;
+  text-align: center;
+}
+.competitions-page__table-head {
+  margin-top: 48px;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  font-size: 14px;
+  line-height: 1.7142857143;
+  font-weight: 700;
+}
+.competitions-page__table-head p {
+  text-align: center;
+  text-transform: uppercase;
+}
+.competitions-page__table-head p:nth-of-type(1) {
+  text-align: left;
+  flex: 0.4;
+}
+.competitions-page__table-head p:nth-of-type(2) {
+  flex: 0.18;
+}
+.competitions-page__table-head p:nth-of-type(3) {
+  flex: 0.1;
+}
+.competitions-page__table-head p:nth-of-type(4) {
+  flex: 0.2;
+}
+.competitions-page__table-body-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 35px 15px;
+}
+.competitions-page__table-body-item:nth-child(odd) {
+  background-color: #F6F6F6;
+}
+.competitions-page__table-body-item p {
+  text-align: center;
+}
+.competitions-page__table-body-item p:nth-of-type(1) {
+  flex: 0.4;
+  text-align: left;
+  font-weight: 700;
+}
+.competitions-page__table-body-item p:nth-of-type(2) {
+  flex: 0.18;
+}
+.competitions-page__table-body-item p:nth-of-type(3) {
+  flex: 0.1;
+}
+.competitions-page__table-body-item p:nth-of-type(4) {
+  flex: 0.2;
+}
+.competitions-page__table-body-item p:nth-of-type(4) a {
+  display: block;
+  margin-top: 8px;
+  padding: 14px 10px;
+  color: var(--white);
+  background-color: var(--accent);
+  border-radius: 50px;
 }/*# sourceMappingURL=style.css.map */
