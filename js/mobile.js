@@ -1,9 +1,12 @@
-const vh = window.innerHeight * 0.01;
-$(".mobile-menu__modal").css("--vh", `${vh}px`);
-$(".mobile-menu__nav-menu > li > ul").css("--vh", `${vh}px`);
+
+
 // document.documentElement.style.setProperty('--vh', `${vh}px`);
 
 $(".menu").on("click", () => {
+
+  const vh = window.innerHeight * 0.01;
+$(".mobile-menu__modal").css("--vh", `${vh}px`);
+
   $(".menu").toggleClass("open");
 
   if ($(".menu").hasClass("open")) {
@@ -19,6 +22,9 @@ $(".menu").on("click", () => {
 });
 
 $(".mobile-menu__nav-menu > li > a").on("click", e => {
+  
+  const vh = window.innerHeight * 0.01;
+  $(".mobile-menu__nav-menu > li > ul").css("--vh", `${vh}px`);
   const { target } = e;
   const children = target.parentElement.parentElement.children;
   const modalTrigger =
