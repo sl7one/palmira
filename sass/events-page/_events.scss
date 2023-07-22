@@ -1,0 +1,42 @@
+.events-page {
+  padding-bottom: 80px;
+
+  &__title {
+    margin-top: 32px;
+    text-align: center;
+  }
+
+  &__list {
+    margin-top: 48px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    column-gap: 16px;
+    row-gap: 64px;
+
+  }
+
+  &__list-item {
+    width: calc(33.33333% - 16px);
+
+    img {
+      max-width: 416px;
+    }
+
+    h2 {
+      margin-top: 32px;
+    }
+
+    a {
+      margin-top: 24px;
+      color: var(--black);
+      @include transition(color);
+    }
+
+    a:hover {
+      color: var(--accent);
+    }
+  }
+
+
+}

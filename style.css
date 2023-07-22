@@ -1220,4 +1220,38 @@ body {
   color: var(--white);
   background-color: var(--accent);
   border-radius: 50px;
+}
+
+.events-page {
+  padding-bottom: 80px;
+}
+.events-page__title {
+  margin-top: 32px;
+  text-align: center;
+}
+.events-page__list {
+  margin-top: 48px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  -moz-column-gap: 16px;
+       column-gap: 16px;
+  row-gap: 64px;
+}
+.events-page__list-item {
+  width: calc(33.33333% - 16px);
+}
+.events-page__list-item img {
+  max-width: 416px;
+}
+.events-page__list-item h2 {
+  margin-top: 32px;
+}
+.events-page__list-item a {
+  margin-top: 24px;
+  color: var(--black);
+  transition: color 250ms ease-in;
+}
+.events-page__list-item a:hover {
+  color: var(--accent);
 }/*# sourceMappingURL=style.css.map */
