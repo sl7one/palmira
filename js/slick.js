@@ -7,7 +7,7 @@ $(() => {
   //hero-slider
   $(".slider").slick({
     infinite: true,
-    autoplay: true,
+    // autoplay: true,
     appendArrows: $(".slider__arrows"),
     autoplaySpeed: 5000,
     zIndex: -1,

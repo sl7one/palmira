@@ -2,12 +2,14 @@
   &__wrapper {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     padding-top: 32px;
     padding-bottom: 80px;
   }
 
   &__content-block {
-    width: 72%;
+    min-width: 70%;
+    max-width: 72%;
 
     p,
     li {
@@ -34,8 +36,8 @@
   }
 
   &__news-list-block {
-    width: 24%;
-
+    min-width: 20%;
+    max-width: 24%;
     h2 {
       font-size: 26px;
       line-height: calc(31 / 26);
