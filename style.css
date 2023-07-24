@@ -210,6 +210,7 @@ body {
 }
 .mobile-menu__header .container {
   z-index: 3;
+  max-width: 350px;
 }
 .mobile-menu__modal {
   width: 100vw;
@@ -228,6 +229,7 @@ body {
 }
 .mobile-menu__nav-menu {
   margin-top: 55px;
+  padding-left: 65px;
   font-weight: 500;
   line-height: 1.2142857143;
   color: #f2f2f2;
@@ -278,8 +280,11 @@ body {
   width: 100%;
   position: absolute;
   bottom: 0;
-  left: 0;
+  left: 50%;
+  transform: translateX(-50%);
   padding: 0 20px 20px 20px;
+  max-width: 320px;
+  margin: 0 auto;
 }
 .mobile-menu__footer > div {
   display: flex;
@@ -290,7 +295,7 @@ body {
   position: absolute;
   top: 90px;
   z-index: 1;
-  margin-left: 20px;
+  margin-left: 80px;
   visibility: hidden;
   opacity: 0;
   transition: all 500ms ease-out;
@@ -377,6 +382,7 @@ body {
   visibility: visible;
   padding: 0 20px;
   padding-top: 55px;
+  padding-left: 85px;
 }
 
 .mobile-menu__back-btn.visible {
