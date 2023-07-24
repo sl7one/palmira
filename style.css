@@ -674,18 +674,24 @@ body {
 }
 
 .about {
-  padding: 80px 0;
+  padding: 40px 0;
+}
+@media screen and (min-width: 1280px) {
+  .about {
+    padding: 80px 0;
+  }
 }
 .about .container {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: space-between;
-  gap: 123px;
+  gap: 40px;
 }
 @media screen and (min-width: 1280px) {
   .about .container {
     flex-direction: row;
+    gap: 123px;
   }
 }
 .about div {
@@ -760,7 +766,12 @@ body {
 }
 
 .news .container {
-  padding: 80px 0;
+  padding: 40px 0;
+}
+@media screen and (min-width: 1280px) {
+  .news .container {
+    padding: 80px 0;
+  }
 }
 .news__btn {
   display: none;

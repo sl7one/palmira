@@ -1,15 +1,20 @@
 .about {
-  padding: 80px 0;
+  padding: 40px 0;
+  
+  @include desktop {
+    padding: 80px 0;
+  }
 
   .container {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: space-between;
-    gap: 123px;
+    gap: 40px;
 
     @include desktop {
       flex-direction: row;
+      gap: 123px;
     }
   }
 

@@ -1,6 +1,10 @@
 .news {
   .container {
-    padding: 80px 0;
+    padding: 40px 0;
+
+    @include desktop {
+      padding: 80px 0;
+    }
   }
 
   &__btn {
@@ -24,14 +28,12 @@
     align-items: center;
     gap: 40px;
 
-    .news__btn{
+    .news__btn {
       @include desktop {
         display: flex;
       }
     }
   }
-
-  
 
   &__slider {
     margin-top: 50px;
@@ -78,12 +80,12 @@
     justify-content: center;
     margin-top: 40px;
 
-    .icon-arrow-slider-right{
-        margin-left: 15px;
+    .icon-arrow-slider-right {
+      margin-left: 15px;
     }
 
-    .icon-arrow-slider-left{
-        margin-right: 15px;
+    .icon-arrow-slider-left {
+      margin-right: 15px;
     }
 
     .arrow-btn-slider {
@@ -94,8 +96,6 @@
       @include desktop {
         font-size: 30px;
       }
-
-
     }
     .slick-dots {
       position: static;
@@ -115,8 +115,7 @@
   }
 }
 
-
-.news .container > .news__btn{
+.news .container > .news__btn {
   display: flex;
   margin: 0 auto;
 
