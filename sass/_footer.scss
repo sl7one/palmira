@@ -42,6 +42,7 @@
       line-height: 1;
       font-weight: 400;
       order: 2;
+      text-align: center;
 
       @include desktop {
         order: unset;
@@ -117,4 +118,5 @@
 
 .btn-white {
   background-color: var(--white);
+  padding: 8px 10px;
 }

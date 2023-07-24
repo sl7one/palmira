@@ -68,6 +68,7 @@
     bottom: 12%;
     right: 50%;
     transform: translate(50%, 50%);
+    display: flex;
 
     .current-slide {
       margin-left: 24px;
@@ -76,6 +77,7 @@
       font-weight: 700;
       line-height: calc(19 / 16);
       color: var(--accent);
+      align-self: baseline;
 
       @include desktop {
         margin-left: 54px;
@@ -88,6 +90,7 @@
       font-weight: 700;
       line-height: calc(40 / 33);
       color: var(--white);
+      align-self: baseline;
 
       @include desktop {
         margin-right: 54px;

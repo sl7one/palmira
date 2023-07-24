@@ -17,6 +17,7 @@
   }
 
   &__list-item {
+    min-width: 280px;
     width: calc(33.33333% - 16px);
 
     img {
@@ -37,6 +38,5 @@
       color: var(--accent);
     }
   }
-
 
 }

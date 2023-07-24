@@ -1,5 +1,5 @@
 .contacts-page {
-    padding-bottom: 80px;
+  padding-bottom: 80px;
   &__title {
     margin-top: 32px;
     text-align: center;
@@ -21,10 +21,25 @@
     gap: 30px;
   }
 
-  &__content-block > div > div{
+  &__content-block > div > div {
     display: flex;
     flex-direction: column;
     gap: 20px;
+    max-width: 370px;
+
+    font-size: 16px;
+    font-weight: 400;
+    line-height: calc(26 / 16);
+
+    p {
+      &:nth-of-type(2) {
+        a {
+          &:nth-of-type(2) {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
   }
 
   &__content-block > div > div > span {
@@ -43,7 +58,7 @@
     color: var(--black);
   }
 
-  &__content-block > div > .header__social-links-list > li > a:hover span{
+  &__content-block > div > .header__social-links-list > li > a:hover span {
     color: var(--accent);
   }
 }

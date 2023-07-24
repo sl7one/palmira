@@ -300,7 +300,7 @@ $half-width: $width / 2 - 0.5px;
     display: flex;
     align-items: center;
     padding: 8px 14px;
-    background-color: var(--gray);
+    background-color: var(--white);
     border-radius: 50px;
     font-size: 13px;
     font-weight: 500;
@@ -319,6 +319,13 @@ $half-width: $width / 2 - 0.5px;
     text-transform: uppercase;
     font-weight: 500;
     line-height: calc(17 / 14);
+
+    a {
+      @include transition(color);
+      &:hover {
+        color: var(--accent);
+      }
+    }
   }
 
   &__search {
@@ -333,6 +340,7 @@ $half-width: $width / 2 - 0.5px;
       outline: unset;
       width: 100%;
       background-color: transparent;
+      color: var(--gray-text);
     }
 
     input::placeholder {
@@ -395,6 +403,7 @@ $half-width: $width / 2 - 0.5px;
   &__nav-menu > li > a {
     text-transform: uppercase;
   }
+
   &__nav-menu > {
     li {
       position: relative;
