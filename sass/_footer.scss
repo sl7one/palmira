@@ -51,6 +51,10 @@
   }
 
   .header__social-links-list {
+    gap: 16px;
+    @include desktop {
+      gap: 24px;
+    }
     span:hover {
       color: var(--white);
     }
@@ -76,7 +80,6 @@
     @include desktop {
       flex-direction: row;
     }
-
   }
 
   &__nav-menu {

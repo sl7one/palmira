@@ -939,6 +939,14 @@ body {
     order: unset;
   }
 }
+.footer .header__social-links-list {
+  gap: 16px;
+}
+@media screen and (min-width: 1280px) {
+  .footer .header__social-links-list {
+    gap: 24px;
+  }
+}
 .footer .header__social-links-list span:hover {
   color: var(--white);
 }
