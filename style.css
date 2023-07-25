@@ -628,7 +628,7 @@ body {
   }
 }
 .slider__item {
-  height: 525px;
+  height: 100vh;
   position: relative;
 }
 @media screen and (min-width: 1280px) {
@@ -1311,7 +1311,7 @@ body {
   margin-top: 48px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
   -moz-column-gap: 16px;
        column-gap: 16px;
   row-gap: 64px;
