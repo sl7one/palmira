@@ -1,11 +1,9 @@
-
-
-// document.documentElement.style.setProperty('--vh', `${vh}px`);
+const vh = window.innerHeight * 0.01;
+  $(".slider__item").css("--vh", `${vh}px`);
 
 $(".menu").on("click", () => {
-
   const vh = window.innerHeight * 0.01;
-$(".mobile-menu__modal").css("--vh", `${vh}px`);
+  $(".mobile-menu__modal").css("--vh", `${vh}px`);
 
   $(".menu").toggleClass("open");
 
@@ -22,7 +20,6 @@ $(".mobile-menu__modal").css("--vh", `${vh}px`);
 });
 
 $(".mobile-menu__nav-menu > li > a").on("click", e => {
-  
   const vh = window.innerHeight * 0.01;
   $(".mobile-menu__nav-menu > li > ul").css("--vh", `${vh}px`);
   const { target } = e;

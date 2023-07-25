@@ -307,15 +307,17 @@ $half-width: $width / 2 - 0.5px;
     display: flex;
     align-items: center;
     padding: 8px 14px;
-    background-color: var(--white);
+    background-color: var(--gray);
     border-radius: 50px;
     font-size: 13px;
     font-weight: 500;
     line-height: calc(16 / 13);
-    @include transition(color);
+    transition: color 250ms ease-in-out, background-color 250ms ease-in-out;
 
     &:hover {
       color: var(--accent);
+      background-color: var(--white);
+
     }
   }
 

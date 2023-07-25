@@ -439,15 +439,16 @@ body {
   display: flex;
   align-items: center;
   padding: 8px 14px;
-  background-color: var(--white);
+  background-color: var(--gray);
   border-radius: 50px;
   font-size: 13px;
   font-weight: 500;
   line-height: 1.2307692308;
-  transition: color 250ms ease-in;
+  transition: color 250ms ease-in-out, background-color 250ms ease-in-out;
 }
 .header__phone-btn:hover {
   color: var(--accent);
+  background-color: var(--white);
 }
 .header__lang-switcher {
   display: flex;
@@ -629,6 +630,7 @@ body {
 }
 .slider__item {
   height: 100vh;
+  height: calc(var(--vh, 1vh) * 100);
   position: relative;
 }
 @media screen and (min-width: 1280px) {
@@ -811,6 +813,9 @@ body {
 .news__slider {
   margin-top: 50px;
   padding: 0 20px;
+}
+.news__slider-item {
+  margin-right: 16px;
 }
 .news__slider-img {
   border-radius: 10px;
