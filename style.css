@@ -1484,4 +1484,47 @@ body {
 }
 .events-page__list-item a:hover {
   color: var(--accent);
+}
+
+.pagination {
+  margin-top: 65px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+.pagination .page-numbers {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  color: var(--black);
+  transition: color 250ms ease-in;
+}
+.pagination .page-numbers:hover {
+  color: var(--accent);
+}
+.pagination .current {
+  border-radius: 50%;
+  background-color: var(--accent);
+  color: var(--white);
+}
+.pagination .current:hover {
+  color: var(--white);
+}
+.pagination .prev .arrow-btn-slider,
+.pagination .next .arrow-btn-slider {
+  color: var(--gray);
+  transition: color 250ms ease-in;
+}
+.pagination .prev .arrow-btn-slider:hover,
+.pagination .next .arrow-btn-slider:hover {
+  color: var(--accent);
+}
+.pagination .prev {
+  margin-right: 14px;
+}
+.pagination .next {
+  margin-left: 14px;
 }/*# sourceMappingURL=style.css.map */
