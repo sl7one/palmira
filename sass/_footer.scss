@@ -76,14 +76,14 @@
     color: var(--white);
     display: flex;
     flex-direction: column;
+    gap: 24px;
 
     @include desktop {
       flex-direction: row;
     }
-  }
 
-  &__nav-menu {
     a {
+      padding: 0;
       @include transition(color);
       &:hover {
         color: var(--accent);
@@ -102,11 +102,12 @@
 
   &__nav-menu > li > a {
     display: inline-block;
-    padding: 15px 0;
+    // padding: 15px 0;
     text-transform: uppercase;
   }
 
   &__nav-menu > li > ul {
+    margin-top: 16px;
     display: flex;
     flex-direction: column;
     gap: 12px;

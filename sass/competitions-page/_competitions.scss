@@ -1,5 +1,10 @@
 .competitions-page {
+  padding-top: 80px;
   padding-bottom: 80px;
+
+  @include desktop {
+    padding-top: unset;
+  }
 
   &__wrapper {
     max-width: 940px;
@@ -11,6 +16,27 @@
     text-align: center;
   }
 
+  &__table {
+    overflow-x: scroll;
+
+    @include desktop {
+      overflow-x: unset;
+    }
+
+    &::-webkit-scrollbar {
+      height: 12px; /* ширина всей полосы прокрутки */
+    }
+
+    &::-webkit-scrollbar-track {
+      background: rgba(0, 0, 0, 0.1); /* цвет зоны отслеживания */
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: var(--accent); /* цвет бегунка */
+      border-radius: 20px; /* округлось бегунка */
+    }
+  }
+
   &__table-head {
     margin-top: 48px;
     display: flex;
@@ -20,6 +46,12 @@
     font-size: 14px;
     line-height: calc(24 / 14);
     font-weight: 700;
+
+    min-width: 950px;
+
+    @include desktop {
+      min-width: unset;
+    }
 
     p {
       text-align: center;
@@ -33,7 +65,7 @@
         flex: 0.18;
       }
       &:nth-of-type(3) {
-        flex: 0.10;
+        flex: 0.1;
       }
       &:nth-of-type(4) {
         flex: 0.2;
@@ -47,8 +79,15 @@
     align-items: center;
     padding: 35px 15px;
 
-    &:nth-child(odd){
-      background-color: #F6F6F6;
+    min-width: 950px;
+
+    @include desktop {
+      min-width: unset;
+    }
+
+
+    &:nth-child(odd) {
+      background-color: #f6f6f6;
     }
 
     p {
@@ -63,12 +102,12 @@
         flex: 0.18;
       }
       &:nth-of-type(3) {
-        flex: 0.10;
+        flex: 0.1;
       }
       &:nth-of-type(4) {
         flex: 0.2;
 
-        a{
+        a {
           display: block;
           margin-top: 8px;
           padding: 14px 10px;

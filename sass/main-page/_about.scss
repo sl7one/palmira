@@ -1,6 +1,6 @@
 .about {
   padding: 40px 0;
-  
+
   @include desktop {
     padding: 80px 0;
   }
@@ -18,7 +18,7 @@
     }
   }
 
-  div{
+  div {
     order: 2;
     @include desktop {
       order: 1;
@@ -26,18 +26,33 @@
   }
 
   &__img {
-    border-radius: 15px;
-    max-width: 417px;
+    width: 100%;
+    img {
+      display: block;
+      border-radius: 15px;
+      max-width: 417px;
+      margin: 0 auto;
+    }
+
     @include desktop {
       order: 2;
     }
   }
 
   .link {
+    color: var(--black);
     margin-top: 24px;
+    display: flex;
+    align-items: center;
+
+    @include transition(color);
+
+    &:hover {
+      color: var(--accent);
+    }
   }
 
-  .text{
+  .text {
     margin-top: 40px;
   }
 }

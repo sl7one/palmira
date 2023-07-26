@@ -41,7 +41,16 @@
   }
 
   &__slider-item {
-    margin-right: 16px;
+    margin: 0 8px;
+  }
+
+  &__link-block {
+    h3 {
+      @include transition(color);
+    }
+    &:hover h3 {
+      color: var(--accent);
+    }
   }
 
   &__slider-img {
@@ -69,6 +78,12 @@
     font-size: 13px;
     font-weight: 600;
     line-height: calc(16 / 13);
+
+    @include transition(color);
+
+    &:hover {
+      color: var(--accent);
+    }
 
     span {
       font-weight: inherit;

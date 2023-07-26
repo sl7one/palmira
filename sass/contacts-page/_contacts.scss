@@ -1,5 +1,10 @@
 .contacts-page {
   padding-bottom: 80px;
+  padding-top: 80px;
+
+  @include desktop {
+    padding-top: unset;
+  }
   &__title {
     margin-top: 32px;
     text-align: center;
@@ -31,6 +36,12 @@
     font-weight: 400;
     line-height: calc(26 / 16);
 
+    text-align: center;
+
+    @include desktop {
+      text-align: unset;
+    }
+
     p {
       &:nth-of-type(2) {
         a {
@@ -52,6 +63,11 @@
 
   &__content-block > div > .header__social-links-list {
     margin-top: 32px;
+    justify-content: center;
+
+    @include desktop {
+      justify-content: unset;
+    }
   }
 
   &__content-block > div > .header__social-links-list > li > a > span {

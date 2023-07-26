@@ -1,5 +1,10 @@
 .services-page {
   padding-bottom: 80px;
+  padding-top: 80px;
+
+  @include desktop {
+    padding-top: unset;
+  }
 
   &__title {
     margin-top: 32px;

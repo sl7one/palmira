@@ -1,7 +1,11 @@
 .prices-page {
-  .container {
-    padding-bottom: 80px;
+  padding-bottom: 80px;
+  padding-top: 80px;
+
+  @include desktop {
+    padding-top: unset;
   }
+  
   
   &__wrapper {
     max-width: 850px;
