@@ -1454,11 +1454,17 @@ body {
   row-gap: 64px;
 }
 .events-page__list-item {
-  min-width: 280px;
-  width: calc(33.33333% - 16px);
+  width: 100%;
 }
-.events-page__list-item img {
-  max-width: 416px;
+@media screen and (min-width: 768px) {
+  .events-page__list-item {
+    width: calc(50% - 16px);
+  }
+}
+@media screen and (min-width: 1280px) {
+  .events-page__list-item {
+    width: calc(33.33333% - 16px);
+  }
 }
 .events-page__list-item h2 {
   margin-top: 32px;
