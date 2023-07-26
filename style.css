@@ -1146,11 +1146,13 @@ body {
 }
 .news-page__next-news-block {
   display: flex;
+  align-items: center;
   gap: 16px;
   max-width: 425px;
 }
 .news-page__next-news-block img {
   max-width: 100px;
+  max-height: 100px;
 }
 .news-page__next-news-block h3 {
   font-size: 18px;
@@ -1166,6 +1168,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  gap: 8px;
 }
 .news-page .news__btn {
   display: flex;
@@ -1341,7 +1344,7 @@ body {
   }
 }
 .competitions-page__wrapper {
-  max-width: 940px;
+  max-width: 950px;
   margin: 0 auto;
 }
 .competitions-page__title {
@@ -1491,7 +1494,11 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 16px;
+}
+@media screen and (min-width: 1280px) {
+  .pagination {
+    gap: 16px;
+  }
 }
 .pagination .page-numbers {
   display: inline-flex;
@@ -1537,12 +1544,16 @@ body {
 .pagination .prev::before {
   content: "\e907";
 }
-.pagination .prev {
-  margin-right: 14px;
+@media screen and (min-width: 1280px) {
+  .pagination .prev {
+    margin-right: 14px;
+  }
 }
 .pagination .next::before {
   content: "\e906";
 }
-.pagination .next {
-  margin-left: 14px;
+@media screen and (min-width: 1280px) {
+  .pagination .next {
+    margin-left: 14px;
+  }
 }/*# sourceMappingURL=style.css.map */
