@@ -15,15 +15,21 @@
     border-radius: 15px;
   }
 
+ 
+
   &__content-block {
     margin: 0 auto;
     margin-top: 46px;
     max-width: 1060px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     gap: 30px;
+
+    @include desktop {
+      justify-content: space-between;
+    }
   }
 
   &__content-block > div > div {

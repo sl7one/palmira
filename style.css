@@ -1242,10 +1242,15 @@ body {
   margin-top: 46px;
   max-width: 1060px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   flex-wrap: wrap;
   gap: 30px;
+}
+@media screen and (min-width: 1280px) {
+  .contacts-page__content-block {
+    justify-content: space-between;
+  }
 }
 .contacts-page__content-block > div > div {
   display: flex;
