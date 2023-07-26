@@ -1513,17 +1513,35 @@ body {
 .pagination .current:hover {
   color: var(--white);
 }
+.pagination .prev,
+.pagination .next {
+  font-family: "icomoon" !important;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  font-size: 20px;
+  color: var(--gray);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
 .pagination .prev .arrow-btn-slider,
 .pagination .next .arrow-btn-slider {
-  color: var(--gray);
   transition: color 250ms ease-in;
 }
 .pagination .prev .arrow-btn-slider:hover,
 .pagination .next .arrow-btn-slider:hover {
   color: var(--accent);
 }
+.pagination .prev::before {
+  content: "\e907";
+}
 .pagination .prev {
   margin-right: 14px;
+}
+.pagination .next::before {
+  content: "\e906";
 }
 .pagination .next {
   margin-left: 14px;
