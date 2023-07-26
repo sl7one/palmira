@@ -1318,6 +1318,7 @@ body {
 }
 .services-page__img-wrapper {
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
   max-width: 850px;
   gap: 16px;
@@ -1325,8 +1326,10 @@ body {
   margin-top: 44px;
   margin-bottom: 44px;
 }
-.services-page__img-wrapper img {
-  max-width: 416px;
+@media screen and (min-width: 1280px) {
+  .services-page__img-wrapper img {
+    max-width: 416px;
+  }
 }
 .competitions-page {
   padding-top: 80px;

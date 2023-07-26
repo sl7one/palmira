@@ -26,6 +26,7 @@
 
   &__img-wrapper {
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
     max-width: 850px;
     gap: 16px;
@@ -35,10 +36,12 @@
     margin-bottom: 44px;
 
     img {
-      max-width: 416px;
+      @include desktop {
+        max-width: 416px;
+      }
     }
   }
 
-  .text{
+  .text {
   }
 }
