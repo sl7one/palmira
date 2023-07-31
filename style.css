@@ -204,7 +204,7 @@ body {
 .mobile-menu {
   background-color: var(--black);
   position: fixed;
-  z-index: 1;
+  z-index: 10;
   width: 100vw;
   top: 0;
   left: 0;
@@ -830,12 +830,30 @@ body {
     display: flex;
   }
 }
-.news__slider {
+.news .swiper {
   margin-top: 50px;
-  padding: 0 20px;
+  width: calc(100% - 40px);
+  z-index: 1;
 }
-.news__slider-item {
-  margin: 0 8px;
+.news .swiper .custom-wrapper {
+  margin-top: 40px;
+  margin-bottom: 24px;
+}
+.news .swiper .custom-wrapper .arrow-btn-slider:hover {
+  color: var(--accent);
+}
+.news .swiper .swiper-pagination {
+  position: static;
+  width: auto;
+}
+.news .swiper .swiper-pagination-bullet {
+  width: 16px;
+  height: 16px;
+  background-color: var(--gray);
+  opacity: 1;
+}
+.news .swiper .swiper-pagination-bullet-active {
+  background-color: var(--accent);
 }
 .news__link-block h3 {
   transition: color 250ms ease-in;

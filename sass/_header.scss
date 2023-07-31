@@ -42,7 +42,7 @@ $half-width: $width / 2 - 0.5px;
 .mobile-menu {
   background-color: var(--black);
   position: fixed;
-  z-index: 1;
+  z-index: 10;
   width: 100vw;
   top: 0;
   left: 0;

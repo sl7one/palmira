@@ -11,13 +11,9 @@ $(() => {
     appendArrows: $(".slider__arrows"),
     autoplaySpeed: 5000,
     zIndex: -1,
-    nextArrow:
-      '<button class="icon-arrow-slider-right arrow-btn-slider" type="button"></button>',
-    prevArrow:
-      '<button class="icon-arrow-slider-left arrow-btn-slider" type="button"></button>',
+    nextArrow: rightArrow,
+    prevArrow: leftArrow,
     mobileFirst: true,
-
-  
   });
 
   //news-slider
@@ -27,48 +23,19 @@ $(() => {
     arrows: false,
     slidesToShow: 1,
     slidesToScroll: 1,
-    waitForAnimate: false,
+    // waitForAnimate: false,
     zIndex: -1,
     mobileFirst: true,
     autoplay: true,
     autoplaySpeed: 5000,
 
     responsive: [
-      {
-        breakpoint: 320,
-        settings: {
-          slidesToShow: 1,
-        },
-      },
-      {
-        breakpoint: 1280,
-        settings: {
-          slidesToShow: 4,
-        },
-      },
-    ],
-  });
-
-  //events-slider
-  $(".events-page__slider").slick({
-    infinite: true,
-    dots: true,
-    arrows: false,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    waitForAnimate: false,
-    zIndex: -1,
-    mobileFirst: true,
-    // autoplay: true,
-    // autoplaySpeed: 5000,
-
-    responsive: [
-      {
-        breakpoint: 320,
-        settings: {
-          slidesToShow: 1,
-        },
-      },
+      // {
+      //   breakpoint: 320,
+      //   settings: {
+      //     slidesToShow: 1,
+      //   },
+      // },
       {
         breakpoint: 1280,
         settings: {
